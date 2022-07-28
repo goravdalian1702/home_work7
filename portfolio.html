@@ -10,30 +10,31 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="container header-page">
-            <a href="" class="logo"><span class="web">Web</span>Studio</a>
+    <header class="page-header">
+        <nav class="page-header_navigation page-header_navigation--position">
+            <a href="" class="logo"><span class="logo__label">Web</span>Studio</a>
             <ul class="site-nav list">
-                <li class="iteam"><a href="./index.html" class="link">Студия</a></li>
-                <li class="iteam"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li class="iteam"><a href="" class="link">Контакты</a></li>
+                <li class="site-nav__iteam"><a href="./index.html" class="site-nav__link ">Студия</a></li>
+                <li class="site-nav__iteam"><a href="./portfolio.html"
+                        class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                <li class="site-nav__iteam"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
             <ul class="auth-nav list">
-                <li class="iteam">
-                    <a href="mailto:info@devstudio.com" class="link">
-                        <svg class="icon">
+                <li class="auth-nav__iteam">
+                    <a href="mailto:info@devstudio.com" class="auth-nav__link">
+                        <svg class="auth-nav__icon">
                             <use href="images/symbol.svg.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="iteam">
-                    <a href="tel:+380961111111" class="link">
-                        <svg class="icon">
+                <li class="auth-nav__iteam">
+                    <a href="tel:+380961111111" class="auth-nav__link">
+                        <svg class="auth-nav__icon">
                             <use href="images/symbol.svg.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -47,20 +48,24 @@
         <section class="section">
             <div class="container">
                 <ul class="button-list">
-                    <li class="iteam"><button type="button" class="button">Все</button></li>
-                    <li class="iteam"><button type="button" class="button">Веб-сайты</button></li>
-                    <li class="iteam"><button type="button" class="button">Приложения</button></li>
-                    <li class="iteam"><button type="button" class="button">Дизайн</button></li>
-                    <li class="iteam"><button type="button" class="button">Маркетинг</button></li>
+                    <li class="button-list__iteam"><button type="button" class="button-list__button">Все</button></li>
+                    <li class="button-list__iteam"><button type="button" class="button-list__button">Веб-сайты</button>
+                    </li>
+                    <li class="button-list__iteam"><button type="button" class="button-list__button">Приложения</button>
+                    </li>
+                    <li class="button-list__iteam"><button type="button" class="button-list__button">Дизайн</button>
+                    </li>
+                    <li class="button-list__iteam"><button type="button" class="button-list__button">Маркетинг</button>
+                    </li>
                 </ul>
 
                 <ul class="business-list">
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/technokriak.jpg" alt="technokriak">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -68,36 +73,36 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Технокряк</h2>
-                                <p class="text">Веб-сайт</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Технокряк</h2>
+                                <p class="card__text">Веб-сайт</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/poster-new-orleans.jpg" alt="poster-new-orleans">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem possimus
                                         officiis, atque fuga distinctio aut alias laudantium a harum impedit sapiente
                                         aspernatur debitis incidunt, ut laborum error quisquam magnam!
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="text">Дизайн</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="card__text">Дизайн</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/seafood.jpg" alt="seafood">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -105,18 +110,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Ресторан Seafood</h2>
-                                <p class="text">Приложение</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Ресторан Seafood</h2>
+                                <p class="card__text">Приложение</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/project-prime.jpg" alt="project-prime">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -124,18 +129,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Проект Prime</h2>
-                                <p class="text">Маркетинг</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Проект Prime</h2>
+                                <p class="card__text">Маркетинг</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/boxes.jpg" alt="boxes">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -143,18 +148,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Проект Boxes</h2>
-                                <p class="text">Приложение</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Проект Boxes</h2>
+                                <p class="card__text">Приложение</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/inspiration-has-no-borders.jpg" alt="inspiration-has-no-borders">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -162,18 +167,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Inspiration has no Borders</h2>
-                                <p class="text">Веб-сайт</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Inspiration has no Borders</h2>
+                                <p class="card__text">Веб-сайт</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/limited-edition.jpg" alt="limited-edition">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -181,18 +186,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Издание Limited Edition</h2>
-                                <p class="text">Дизайн</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Издание Limited Edition</h2>
+                                <p class="card__text">Дизайн</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="/images/project-lab.jpg" alt="project-lab">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -200,18 +205,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Проект LAB</h2>
-                                <p class="text">Маркетинг</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Проект LAB</h2>
+                                <p class="card__text">Маркетинг</p>
                             </div>
                         </article>
                     </li>
-                    <li class="iteam">
+                    <li class="business-list__iteam">
                         <article class="card">
-                            <div class="card-thumb">
+                            <div class="card__thumb">
                                 <img src="./images/growing-busness.jpg" alt="growing-busness">
-                                <div class="prodect-overlay">
-                                    <p class="text-card">
+                                <div class="card__overlay">
+                                    <p class="card__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -219,9 +224,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <h2 class="business-list-title">Growing Business</h2>
-                                <p class="text">Приложение</p>
+                            <div class="card__content">
+                                <h2 class="card__title">Growing Business</h2>
+                                <p class="card__text">Приложение</p>
                             </div>
                         </article>
                     </li>
@@ -232,46 +237,52 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-wrapper">
-                <a href="" class="logo"><span class="web">Web</span>Studio</a>
+                <a href="" class="logo footer-wrapper__logo"><span class="logo__label">Web</span>Studio</a>
                 <address class="adress">
                     <ul class="footer-list">
-                        <li class="child"><a href="https://goo.gl/maps/ksfbacFtiWW7DBpV7" class="link">г. Киев, пр-т
+                        <li class="footer-list__iteam"><a href="https://goo.gl/maps/ksfbacFtiWW7DBpV7"
+                                class="footer-list__link">г.
+                                Киев, пр-т
                                 Леси
                                 Украинки, 26</a>
                         </li>
-                        <li class="child"><a href="mailto:info@example.com" class="link mail">info@example.com</a>
+                        <li class="footer-list__iteam"><a href="mailto:info@example.com"
+                                class="footer-list__link footer-list__link--mail">info@example.com</a>
                         </li>
-                        <li class="child"><a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a></li>
+                        <li class="footer-list__iteam">
+                            <a href="tel:+380991111111" class="footer-list__link footer-list__link--tel">+38 099 111 11
+                                11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
             <div class="footer-icons">
-                <h3 class="title">присоединяйтесь</h3>
-                <ul class="second-list">
-                    <li class="child">
-                        <a href="" class="link">
-                            <svg class="icon">
+                <h3 class="footer-icons__title">присоединяйтесь</h3>
+                <ul class="link-footlist">
+                    <li class="link-footlist__item">
+                        <a href="" class="link-footlist__link">
+                            <svg class="link-footlist__icon">
                                 <use href="images/symbol.svg.svg#icon-instagram-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="child">
-                        <a href="" class="link">
-                            <svg class="icon">
+                    <li class="link-footlist__item">
+                        <a href="" class="link-footlist__link">
+                            <svg class="link-footlist__icon">
                                 <use href="images/symbol.svg.svg#icon-twitter-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="child">
-                        <a href="" class="link">
-                            <svg class="icon">
+                    <li class="link-footlist__item">
+                        <a href="" class="link-footlist__link">
+                            <svg class="link-footlist__icon">
                                 <use href="images/symbol.svg.svg#icon-facebook-1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="child">
-                        <a href="" class="link">
-                            <svg class="icon">
+                    <li class="link-footlist__item">
+                        <a href="" class="link-footlist__link">
+                            <svg class="link-footlist__icon">
                                 <use href="images/symbol.svg.svg#icon-linkedin-1"></use>
                             </svg>
                         </a>
@@ -279,14 +290,13 @@
                 </ul>
             </div>
             <form class="footer-form">
-                <h3 class="title-form">Подпишитесь на рассылку</h3>
-                <div class="form-field">
+                <h3 class="footer-form__title">Подпишитесь на рассылку</h3>
+                <div class="footer-form__field">
                     <label for="email"></label>
-                    <input class="input-form" type="email" name="mail" id="email" placeholder="E-mail">
-
-                    <button type="submit" class="button-form">
+                    <input class="footer-form__input" type="email" name="mail" id="email" placeholder="E-mail">
+                    <button type="submit" class="footer-form__button">
                         Подписаться
-                        <svg class="icon">
+                        <svg class="footer-form__icon">
                             <use href="./images/symbol-defs (3).svg#icon-icon-send"></use>
                         </svg>
                     </button>
